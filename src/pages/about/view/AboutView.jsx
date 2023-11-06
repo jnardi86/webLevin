@@ -1,9 +1,14 @@
 import React from 'react'
 import "./aboutView.css"
+import AboutCV from '../components/AboutCV'
+import AboutHero from '../components/AboutHero'
 
 const AboutView = () => {
   return (
-    <div>AboutView</div>
+    <div>
+      <AboutHero/>
+      <AboutCV/>
+    </div>
   )
 }
 

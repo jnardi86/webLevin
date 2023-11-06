@@ -1,42 +1,43 @@
-import React, { useState } from 'react';
-import "./navbar.css";
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import './navbar.css';
+import NavDesktop from './components/NavDesktop';
+import NavMobile from './components/NavMobile';
+
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
 
+    const [mobileView, setMobileView] = useState(true);
 
-    const handleMenuToggle = () => {
-        setMenuOpen(!menuOpen);
-    };
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768) {
+                setMobileView(true);
+            } else {
+                setMobileView(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize();
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
 
     return (
-        <nav>
-            <label for="check">
-                <input type="checkbox" id="check" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <div>
+            {
+
+                (mobileView) ? <NavMobile /> : <NavDesktop />
+            }
 
 
-            <ul className="">
-                <li>
-                    <Link to="/">Inicio</Link>
-                </li>
-                <li>
-                    <Link to="/services">Servicios</Link>
-                </li>
-                <li>
-                    <Link to="/about">Sobre mi</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contacto</Link>
-                </li>
-            </ul>
-        </nav>
+
+        </div>
     )
+
 }
 
 export default Navbar
