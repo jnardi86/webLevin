@@ -22,7 +22,7 @@ const NavMobile = () => {
 
             <ul className="">
                 <li>
-                    <Link to="/">Inicio ramajp</Link>
+                    <Link to="/">Inicio TestFeature</Link>
                 </li>
                 <li>
                     <Link to="/services">Servicios</Link>
