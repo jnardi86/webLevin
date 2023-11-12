@@ -18,39 +18,25 @@ const NavMobile = () => {
 
     return (
         <nav>
-            {menuOpen ?
-                (
-                    <div className="nav-mobile-open fade-in-out">
-                        <div className="nav-mobile-container">
-                            {/* HEADER */}
-                            < div className="nav-mobile-header">
-                                < Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
-                            </div>
-                            {/* BODY */}
-                            <div className="nav-mobile-body">
-                                <ul>
-                                    {navItems.map((item, index) => {
-                                        return (
-                                            <li key={index}>
-                                                < Link className="linkTo" to={item.link} onClick={handleMenuToggle} >{item.label}</Link>
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                ) : (
-                    <div className="nav-mobile-closed">
-                        <div className="nav-mobile-container">
-                            {/* HEADER */}
-                            < div className="nav-mobile-header">
-                            < Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
-                            </div>
-                        </div>
-                    </div>
-                )
-            }
+            <div className="nav-mobile-container">
+                {/* HEADER */}
+                < div className={menuOpen? "nav-mobile-header expanded" : "nav-mobile-header"}>
+                    < Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
+                </div>
+
+
+                <div className={menuOpen? "nav-mobile-body visible" : "nav-mobile-body"}>
+                    <ul>
+                        {navItems.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    < Link className="linkTo" to={item.link} onClick={handleMenuToggle} >{item.label}</Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+            </div>
         </nav >
     )
 }
