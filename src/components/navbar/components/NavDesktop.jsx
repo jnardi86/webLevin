@@ -5,17 +5,21 @@ import { navItems } from "./navItems"
 
 
 const NavDesktop = () => {
+
+
   return (
-    <div>
-      <ul className="">
-        {navItems.map((item, index) => {
-          return (
-            <li>
-              <Link to={item.link}>{item.label}</Link></li>
-          )
-        })}
-      </ul>
-    </div>
+    <nav>
+      <div className="nav-desktop-body">
+        <ul>
+          {navItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link className="linkTo" to={item.link}>{item.label}</Link></li>
+            )
+          })}
+        </ul>
+      </div>
+    </nav>
   )
 }
 

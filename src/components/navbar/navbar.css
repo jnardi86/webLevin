@@ -4,7 +4,12 @@
 
 nav {
   width: 100%;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
 }
+
+.navbar-mobile {}
 
 .nav-mobile-container {
   position: relative;
@@ -17,11 +22,11 @@ nav {
 }
 
 .nav-mobile-header.expanded {
-  background-color: #ababab;
+  background-color: #fafafa;
 }
 
 .nav-mobile-header.expanded label span {
-  background: #fff !important;
+  background: #000 !important;
 }
 
 .nav-mobile-body {
@@ -29,8 +34,8 @@ nav {
   top: 50;
   left: 0;
   width: 100%;
-  height: calc(100vh - 100px);
-  background-color: #ababab;
+  height: calc(100vh - 200px);
+  background-color: #fafafa;
   padding-top: 100px;
   opacity: 0;
   transform: scale(0);
@@ -67,24 +72,43 @@ nav {
 .nav-mobile-body li .linkTo:hover {
   text-decoration: none;
   color: rgb(121, 79, 79);
-
 }
-
-
-
-
-
-
 
 
 /*****************************************
  Estilo para el navbar en modo desktop
  *****************************************/
 
+.nav-desktop-body {
+  width: 100%;
+  height: 82px;
+  display: flex;
+  align-items: center;
+}
 
 
+.nav-desktop-body ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
-.nav-mobile-body {}
+.nav-desktop-body li {
+  list-style: none;
+  text-decoration: none;
+}
 
+.nav-desktop-body li .linkTo {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  padding: 0 3rem;
+}
 
-.nav-mobile-items-container {}
+.nav-desktop-body li .linkTo:hover {
+  text-decoration: none;
+  color: rgb(121, 79, 79);
+}
