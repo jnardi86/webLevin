@@ -7,21 +7,20 @@
 /* ********** */
 
 
-/* FORMAT STYLES */
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 body {
     font-family: Arial, sans-serif;
-    /* color: var(--color1); */
+    color: var(--colorPri1);
     font-size: 16px;
 }
 
 :root {
+
+    /* FORMAT STYLES */
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
     /* PALETTE COLORS */
 
