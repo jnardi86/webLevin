@@ -1,0 +1,117 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&display=swap');
+
+/* ********** */
+
+
+/* FORMAT STYLES */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* color: var(--color1); */
+    font-size: 16px;
+}
+
+:root {
+
+    /* PALETTE COLORS */
+
+    /* PRIMARY COLORS */
+
+    --colorPri1: #fff;
+    --colorPri2: #F8F8F8;
+    --colorPri3: #dd6666;
+    --colorPri4: #9187c4;
+    --colorPri5: #6969B3;
+    --colorPri6: #3E4C94;
+    --colorPri7: #252442;
+    --colorPri8: #2E3033;
+
+    /* SECUNDARY COLORS */
+
+    --colorSec1: #57272e;
+    --colorSec2: #793e3f;
+    --colorSec3: #a66052;
+    --colorSec4: #df906c;
+    --colorSec5: #f2cd82;
+
+    /* FONTS */
+
+    .titlePri1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 4rem;
+    }
+
+    .titlePri2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 3rem;
+
+    }
+
+    .titlePri3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+
+    }
+
+    .titleSec1 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 800;
+        font-size: 4rem;
+    }
+
+    .titleSec2 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+
+    }
+
+    .titleSec3 {
+        font-family: 'Sora', sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+
+    }
+
+    .text1 {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 300;
+        font-size: 1.4rem;
+
+    }
+
+    .text2 {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 200;
+        font-size: 1.2rem;
+
+    }
+
+    .textLinks {
+        font-family: 'Sora', sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+
+    }
+
+    .textButton {
+        font-family: 'Sora', sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+
+    }
+
+}
