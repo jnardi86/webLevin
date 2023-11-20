@@ -1,0 +1,13 @@
+.hero-container {
+
+
+    background-image: url('../../../assets/abstract_background_3.jpg');
+    background-size: cover;
+
+    background-position: left;
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 800px;
+}

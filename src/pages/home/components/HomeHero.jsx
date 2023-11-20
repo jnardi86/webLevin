@@ -1,8 +1,11 @@
 import React from 'react'
+import "./HomeHero.css"
 
 const HomeHero = () => {
   return (
-    <div>HomeHero</div>
+    <div className='hero-container'>
+      
+    </div>
   )
 }
 

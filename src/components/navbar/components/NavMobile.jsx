@@ -1,40 +1,43 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../../navbar/navbar.css';
+import { navItems } from "./navItems"
+import Hamburger from './Hamburger';
+
 
 const NavMobile = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
-
+    const [hamburgerCheckbox, setHamburgerCheckbox] = useState(false);
 
     const handleMenuToggle = () => {
         setMenuOpen(!menuOpen);
+        setHamburgerCheckbox(!hamburgerCheckbox);
     };
+
 
     return (
         <nav>
-            <label htmlFor="check">
-                <input type="checkbox" id="check" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+            <div className="nav-mobile-container">
+                {/* HEADER */}
+                < div className={menuOpen? "nav-mobile-header expanded" : "nav-mobile-header"}>
+                    < Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
+                </div>
 
-            <ul className="">
-                <li>
-                    <Link to="/">Inicio TestFeature</Link>
-                </li>
-                <li>
-                    <Link to="/services">Servicios</Link>
-                </li>
-                <li>
-                    <Link to="/about">Sobre mi</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contacto</Link>
-                </li>
-            </ul>
-        </nav>
+
+                <div className={menuOpen? "nav-mobile-body visible" : "nav-mobile-body"}>
+                    <ul>
+                        {navItems.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    < Link className="linkTo" to={item.link} onClick={handleMenuToggle} >{item.label}</Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+            </div>
+        </nav >
     )
 }
 

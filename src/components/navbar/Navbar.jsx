@@ -29,7 +29,6 @@ const Navbar = () => {
     return (
         <div>
             {
-
                 (mobileView) ? <NavMobile /> : <NavDesktop />
             }
 
