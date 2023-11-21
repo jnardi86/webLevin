@@ -1,0 +1,51 @@
+.homeContact-container{
+    width: 80%;
+    min-height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.homeContact-container .container{
+    width: 40%;
+    min-height: 100px;
+    color: var(--colorPri1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+}
+
+
+.cell-container{
+    background-color: var(--colorPri5);
+}
+
+.email-container{
+    background-color: var(--colorPri6);
+}
+
+.text-container{
+    font-family: var(--titlePri1);
+    font-size: 1.2rem;
+}
+
+.text-container .link-to{
+text-decoration: none;
+color: var(--colorPri1);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.google-icon{
+    font-size:  5rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}

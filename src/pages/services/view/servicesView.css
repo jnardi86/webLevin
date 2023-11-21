@@ -1,0 +1,14 @@
+.services-container {
+    background-color: var(--colorPri2);
+    padding: 3rem;
+}
+
+.services-container .title {
+    font-size: 1.5rem;
+    font-family: var(--titlePri1);
+}
+
+.services-container .body {
+    font-size: 1.2rem;
+    font-family: var(--titlePri1);   
+}
