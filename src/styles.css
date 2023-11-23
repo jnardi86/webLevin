@@ -116,6 +116,7 @@ body {
 }
 
 .main-container {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -124,16 +125,19 @@ body {
 
 /* BUTTONS */
 
-.btn-1 {
+.btn1 {
     padding: 1rem 1.5rem;
     text-decoration: none;
     background-color: var(--colorPri5);
     border: 1px solid var(--colorPri5);
     color: var(--colorPri1);
     transition: 0.5s;
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
-.btn-1:hover {
+.btn1:hover {
     background-color: transparent;
     color: var(--colorPri5);;
 }
