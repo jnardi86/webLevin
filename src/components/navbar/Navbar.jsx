@@ -32,8 +32,6 @@ const Navbar = () => {
                 (mobileView) ? <NavMobile /> : <NavDesktop />
             }
 
-
-
         </div>
     )
 
