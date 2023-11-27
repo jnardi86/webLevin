@@ -9,15 +9,20 @@ const NavDesktop = () => {
 
   return (
     <nav>
-      <div className="nav-desktop-body">
-        <ul>
-          {navItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <Link className="linkTo" to={item.link}>{item.label}</Link></li>
-            )
-          })}
-        </ul>
+      <div className="navDesktop--container">
+        <div className="navDesktop__logo">
+          <p className='titlePri3'><strong>Dra.</strong> María Elena<strong> Levín</strong></p>
+        </div>
+        <div className="navDesktop__links">
+          <ul>
+            {navItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <Link className="linkTo textLinks" to={item.link}>{item.label}</Link></li>
+              )
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   )
