@@ -117,8 +117,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+
 }
 
 
@@ -139,7 +138,8 @@ body {
 
 .btn1:hover {
     background-color: transparent;
-    color: var(--colorPri5);;
+    color: var(--colorPri5);
+    ;
 }
 
 /* MARGIN */
@@ -189,4 +189,15 @@ body {
 
 .mb-5 {
     margin-bottom: 5rem;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .main-container {
+        width: 80%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
 }
