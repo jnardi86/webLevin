@@ -32,7 +32,7 @@ const NavMobile = () => {
                             <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
                         </div>
                         <div>
-                            <p className='titlePri2'><strong>Dra. Levín</strong></p>
+                            <p className='titleSec3'>Dra. María Elena Levín</p>
                         </div>
                         <div>
                         </div>
