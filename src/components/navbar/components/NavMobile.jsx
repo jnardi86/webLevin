@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../navbar/navbar.css';
 import { navItems } from "./navItems"
 import Hamburger from './Hamburger';
+import { useEffect } from 'react';
 
 
 const NavMobile = () => {
@@ -16,21 +17,36 @@ const NavMobile = () => {
     };
 
 
+    useEffect(() => {
+        menuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible';
+    }, [menuOpen]);
+
+
     return (
         <nav>
-            <div className="nav-mobile-container">
+            <div className="navMobile--container">
                 {/* HEADER */}
-                < div className={menuOpen? "nav-mobile-header expanded" : "nav-mobile-header"}>
-                    < Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
+                < div className={menuOpen ? "navMobile__header expanded" : "navMobile__header"}>
+                    <div className="navMobile__header__content">
+                        <div>
+                            <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} hamburgerCheckbox={hamburgerCheckbox} setHamburgerCheckbox={setHamburgerCheckbox} />
+                        </div>
+                        <div>
+                            <p className='titleSec3'>Dra. María Elena Levín</p>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
                 </div>
 
 
-                <div className={menuOpen? "nav-mobile-body visible" : "nav-mobile-body"}>
+                <div className={menuOpen ? "navMobile__body visible" : "navMobile__body"}>
+
                     <ul>
                         {navItems.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    < Link className="linkTo" to={item.link} onClick={handleMenuToggle} >{item.label}</Link>
+                                    < Link className="linkTo textLinks" to={item.link} onClick={handleMenuToggle} >{item.label}</Link>
                                 </li>
                             )
                         })}
