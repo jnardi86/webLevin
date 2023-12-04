@@ -77,6 +77,7 @@ const ContactForm = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
                 />
               </div>
 
@@ -86,6 +87,7 @@ const ContactForm = () => {
                   type="text"
                   value={lastname}
                   onChange={(e) => setLastname(e.target.value)}
+                  required
                 />
               </div>
 
@@ -95,6 +97,7 @@ const ContactForm = () => {
                   type="text"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
+                  required
                 />
               </div>
 
@@ -102,9 +105,10 @@ const ContactForm = () => {
               <div className="contactForm__form__input">
                 <label>Correo electrónico:</label>
                 <input
-                  type="text"
+                  type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
 
@@ -115,6 +119,7 @@ const ContactForm = () => {
                   type="text"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  required
                 />
               </div>
 
@@ -125,6 +130,7 @@ const ContactForm = () => {
                   type="text"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </div>
 
