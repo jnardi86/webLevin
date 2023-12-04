@@ -1,10 +1,17 @@
+import PageHeader from "../../../components/pageHeader/PageHeader"
 import ServicesList from "../components/ServicesList"
 
 
 const ServicesView = () => {
   return (
 
-    <ServicesList/>
+    <div>
+      <PageHeader
+      title="Servicios"
+      />
+      <ServicesList />
+    </div>
+
 
   )
 }

@@ -1,10 +1,16 @@
 import './servicePhoto.css'
 
-const ServicePhoto = ({img}) => {
+const ServicePhoto = ({ imgMobile, imgDesktop }) => {
   return (
+
     <div className='servicePhoto'>
-        <img src={img} alt="Services Img" />
+      <picture>
+        <source srcSet={imgMobile} media='(max-width: 767px)' />
+        <source srcSet={imgDesktop} media='(min-width: 768px)' />
+        <img src={imgMobile} alt="Services Img" />
+      </picture>
     </div>
+
   )
 }
 
