@@ -1,4 +1,19 @@
 .servicePhoto img {
     width: 100%;
-
 }
+
+
+/* @media only screen and (min-width: 768px) {
+    .homeAbout {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .homeAbout--text {
+        width: 50%;
+
+    }
+
+    .homeAbout--image {
+        width: 50%;
+    } */
