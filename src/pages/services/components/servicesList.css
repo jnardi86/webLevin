@@ -8,8 +8,10 @@
 
 @media only screen and (min-width: 1024px) {
     .services {
+        margin-top: 10rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10rem;
         padding: 20px;
     }
 
