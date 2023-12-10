@@ -11,6 +11,6 @@ Tecnologías y lenguajes:
   <li>REACT</li>
 </ul>
 
-<a href="dralevin.ar">Sitio web</a>
+<a href="https://dralevin.ar">Sitio web</a>
 
 
