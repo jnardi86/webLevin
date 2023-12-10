@@ -7,14 +7,36 @@
 }    
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 
-    .services {
+    .servicesList {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
     }
 
+    .serviceList--item1 {
+        order: 1;
+    }
+
+    .serviceList--item2 {
+        order: 2;
+    }
+
+    .serviceList--item3 {
+        order: 4;
+    }
+
+    .serviceList--item4 {
+        order: 3;
+    }
+    .serviceList--item5 {
+        order: 5;
+    }
+    .serviceList--item6 {
+        order: 6;
+    }
 }
 
 
