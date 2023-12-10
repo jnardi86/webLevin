@@ -9,7 +9,8 @@ Tecnologías y lenguajes:
   <li>CSS</li>
   <li>JS</li>
   <li>REACT</li>
-  <li><a href="dralevin.ar">ir al sitio</a></li>
 </ul>
+
+<a href="dralevin.ar">Sitio web</a>
 
 
